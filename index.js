@@ -88,11 +88,8 @@ function getRange(numbers) {
  * @returns {number[]} the even numbers in the array
  */
 function getEvens(numbers) {
-  let getEvens = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 == 0) {
-      event.push(numbers[i]);
-    }
+ const getEvens = (numbers) => {
+  return numbers.filter((num) => num % 2 == 0);
   }
 }
 
